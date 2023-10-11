@@ -4,6 +4,7 @@ export enum StatusImgVariants {
   cross = "cross",
   hourglass = "hourglass",
   sent = "sent",
+  castle = "castle",
 }
 
 export type Variant = {

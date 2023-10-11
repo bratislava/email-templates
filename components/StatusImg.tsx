@@ -30,6 +30,9 @@ export const StatusImg = ({
     case "sent":
       icon = "sent";
       break;
+    case "castle":
+      icon = "castle";
+      break;
     default:
       break;
   }

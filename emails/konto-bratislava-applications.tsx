@@ -57,10 +57,15 @@ const variants = {
     statusImg: StatusImgVariants.cross,
     text: texts.mainTexts.denied.content,
   },
+  paasTestingInvitation: {
+    titleText: texts.mainTexts.paasTestingInvitation.title,
+    statusImg: StatusImgVariants.castle,
+    text: texts.mainTexts.paasTestingInvitation.content,
+  },
 };
 
 export const FormStatusEmail = ({
-  variant = variants.sent,
+  variant = variants.paasTestingInvitation,
 }: FormStatusEmailProps) => {
   return (
     <Html>
@@ -68,52 +73,89 @@ export const FormStatusEmail = ({
       <Body style={main}>
         <Container style={container}>
           <Row style={{ ...border, paddingTop: "0" }}>
-            <Img
-              height={40}
-              src={`${cdnImageAddress}/bratislava-castle-medium.png`}
-              alt="Mesto Bratislava"
-              style={logoImg}
-            />
+            <Column>
+              <Img
+                height={40}
+                src={`${cdnImageAddress}/bratislava-castle-medium.png`}
+                alt="Mesto Bratislava"
+                style={logoImg}
+              />
+            </Column>
           </Row>
           <Row style={containerMain}>
-            <StatusImg variant={variant.statusImg} />
-            <Heading as="h1" style={heading}>
-              {variant.titleText}
-            </Heading>
             <Column>
+              <StatusImg variant={variant.statusImg} />
+              <Heading as="h1" style={{ ...containerMain, ...heading }}>
+                {variant.titleText}
+              </Heading>
               <Row>
-                <Text style={headerContentSubtitle}>{texts.salutation}</Text>
-                <Markdown>{variant.text}</Markdown>
+                <Column>
+                  <Text style={headerContentSubtitle}>{texts.salutation}</Text>
+                  <Markdown
+                    markdownCustomStyles={{
+                      p: { marginBottom: "48px" },
+                    }}
+                  >
+                    {variant.text}
+                  </Markdown>
 
-                {[variants.errorVirus, variants.errorTryAgain].includes(
-                  variant
-                ) && (
-                  <>
-                    <Link style={fullWidthButton}>{texts.editFormTitle}</Link>
-                  </>
-                )}
-                {[
-                  variants.sent,
-                  variants.delivered,
-                  variants.success,
-                  variants.denied,
-                ].includes(variant) && (
-                  <>
-                    <Text style={border} />
-                    <Heading as="h2" style={feedback}>
-                      {texts.feedbackTitle}
-                    </Heading>
-                    <Link style={fullWidthButton}>{texts.feedbackButton}</Link>
-                  </>
-                )}
-                <Text style={border} />
-                <Markdown
-                  markdownCustomStyles={{
-                    p: { marginBottom: "0px" },
-                  }}
-                >
-                  {texts.footer}
-                </Markdown>
+                  {[variants.errorVirus, variants.errorTryAgain].includes(
+                    variant
+                  ) && (
+                    <>
+                      <Link href="{{formLink}}" style={fullWidthButton}>
+                        {texts.editFormTitle}
+                      </Link>
+                    </>
+                  )}
+                  {variant === variants.paasTestingInvitation && (
+                    <>
+                      <Link
+                        href={
+                          texts.mainTexts.paasTestingInvitation.buttonAddress
+                        }
+                        style={fullWidthButton}
+                      >
+                        {texts.mainTexts.paasTestingInvitation.buttonTitle}
+                      </Link>
+                    </>
+                  )}
+                  {[
+                    variants.sent,
+                    variants.delivered,
+                    variants.success,
+                    variants.denied,
+                  ].includes(variant) && (
+                    <>
+                      <Text style={border} />
+                      <Heading as="h2" style={feedback}>
+                        {texts.feedbackTitle}
+                      </Heading>
+                      <Link style={fullWidthButton}>
+                        {texts.feedbackButton}
+                      </Link>
+                    </>
+                  )}
+                  <Text style={border} />
+                  <Markdown
+                    markdownCustomStyles={{
+                      p: { marginBottom: "0px" },
+                    }}
+                  >
+                    {texts.footer}
+                  </Markdown>
+                  <Markdown
+                    markdownCustomStyles={{
+                      p: {
+                        marginBottom: "0px",
+                        marginTop: "24px",
+                        textAlign: "center",
+                      },
+                    }}
+                  >
+                    {texts.unsubscribe}
+                  </Markdown>
+                </Column>
               </Row>
             </Column>
           </Row>

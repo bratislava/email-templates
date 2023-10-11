@@ -1,5 +1,5 @@
 export const texts = {
-  salutation: "Dobrý deň, {{name}},",
+  salutation: "Dobrý deň, {{firstName}},",
   mainTexts: {
     errorVirus: {
       title: "Vo Vašej žiadosti sme našli vírus",
@@ -36,6 +36,13 @@ export const texts = {
       content:
         'ďakujeme, že ste sa rozhodli podať žiadosť {{názov žiadosti}} cez Bratislavské konto.<br/><br/><strong>Žiadosť bola zamietnutá.</strong> V prílohe nájdete právoplatné rozhodnutie s odôvodnením zamietnutia. Detaily žiadosti si tiež môžete pozrieť aj vo svojom Bratislavskom konte v sekcii Moje žiadosti, v časti <a href="{{linkApplications}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odoslané</a> po kliknutí na konkrétnu žiadosť.',
     },
+    paasTestingInvitation: {
+      title: "Poďte s nami testovať webstránku paas<span>.sk</span>",
+      content:
+        'záleží nám na kvalite mestských služieb a spokojnosti obyvateliek a obyvateľov pri ich používaní. Ako používateľa/-ku Bratislavského konta, by sme Vás radi pozvali na testovanie noviniek a úprav webovej stránky mestského parkovacieho systému <a href="https://paas.sk" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">paas.sk</a>. Testovanie trvá približne 45 minút a bude prebiehať 13.-29. októbra v priestoroch magistrátu na Primaciálnom námestí v Bratislave. Spýtame na Vaše skúsenosti so stránkou a názor na pripravované zmeny. <strong>Pre účasť sa, prosíme, registrujte na konkrétny termín kliknutím na “Registrovať sa na testovanie”.</strong>',
+      buttonTitle: "TODORegistrovať sa na testovanie",
+      buttonAddress: "https://www.bratislava.sk/bratislavske-konto",
+    },
   },
   editFormTitle: "Upraviť žiadosť",
   feedbackTitle:
@@ -43,4 +50,6 @@ export const texts = {
   feedbackButton: "Vyplniť dotazník",
   footer:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
+  unsubscribe:
+    'Ak sa chcete odhlásiť z odberu, <a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">kliknite sem</a>.',
 };
