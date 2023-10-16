@@ -40,8 +40,9 @@ export const texts = {
       title: "Poďte s nami testovať webstránku paas<span>.sk</span>",
       content:
         'záleží nám na kvalite mestských služieb a spokojnosti obyvateliek a obyvateľov pri ich používaní. Ako používateľa/-ku Bratislavského konta, by sme Vás radi pozvali na testovanie noviniek a úprav webovej stránky mestského parkovacieho systému <a href="https://paas.sk" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">paas.sk</a>. Testovanie trvá približne 45 minút a bude prebiehať 13.-29. októbra v priestoroch magistrátu na Primaciálnom námestí v Bratislave. Spýtame na Vaše skúsenosti so stránkou a názor na pripravované zmeny. <strong>Pre účasť, prosíme, registrujte sa na konkrétny termín kliknutím na “Registrovať sa na testovanie”.</strong>',
-      buttonTitle: "TODORegistrovať sa na testovanie",
-      buttonAddress: "https://www.bratislava.sk/bratislavske-konto",
+      buttonTitle: "Registrovať sa na testovanie",
+      buttonAddress:
+        "https://calendly.com/jakub-hruby/testovanie-webu-paas-sk?month=2023-10&date=2023-10-23",
     },
   },
   editFormTitle: "Upraviť žiadosť",
