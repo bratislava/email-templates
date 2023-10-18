@@ -48,7 +48,7 @@ export const texts = {
   editFormTitle: "Upraviť žiadosť",
   feedbackTitle:
     "Prosíme, ohodnoťte Vašu skúsenosť a pomôžte mestu Bratislava zlepšovať svoje služby.",
-  feedbackButton: "Vyplniť dotazník",
+  feedbackButton: "TODOVyplniť dotazník",
   footer:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
   unsubscribe:
