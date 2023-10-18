@@ -1,4 +1,4 @@
-export const texts = {
+export const kontoTexts = {
   salutation: "Dobrý deň, {{firstName}},",
   mainTexts: {
     errorVirus: {
@@ -53,4 +53,30 @@ export const texts = {
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
   unsubscribe:
     'Ak sa chcete odhlásiť z odberu, <a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">kliknite sem</a>.',
+};
+
+export const mpaTexts = {
+  footer:
+    "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
+  validateEmail: {
+    title: "Potrvďte email pre načítanie parkovacích kariet",
+    description:
+      "Pre pokračovanie s načítaním Vašich parkovacích kariet kliknite na tlačidlo, ktoré Vás presmeruje do mobilnej aplikácii a načíta Vaše dostupné parkovacie karty.",
+    validateEmail: "Potvrdiť email",
+  },
+  feedback: {
+    title: "Feedback od používateľa",
+    description: "Nasledovný feedback odoslal používateľ:",
+    feedbackTemplate: "{{feedbackType}} - {{feedbackValue}}",
+  },
+  ticketEnded: {
+    title: "Váš parkovací listok skončil",
+    description:
+      "Parkovací lístok do zóny {{parkingZone}} pre auto {{vehiclePlateNumber}} sa ukončil o {{parkingEnd}}.",
+  },
+  ticketAboutToEnd: {
+    title: "Váš parkovací listok sa ukončí o 15 minút",
+    description:
+      "Parkovací lístok do zóny {{parkingZone}} pre auto {{vehiclePlateNumber}} sa ukončil o 15 minút.",
+  },
 };

@@ -15,7 +15,7 @@ import * as React from "react";
 import StatusImg from "../components/StatusImg";
 import { cdnImageAddress } from "../utils/constants";
 import { StatusImgVariants, Variant } from "../utils/enums";
-import { texts } from "../utils/translations";
+import { kontoTexts as texts } from "../utils/translations";
 
 interface FormStatusEmailProps {
   variant: Variant;
