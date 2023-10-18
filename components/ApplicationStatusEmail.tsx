@@ -85,7 +85,7 @@ const ApplicationStatusEmail = ({
           <Row style={containerMain}>
             <Column>
               <StatusImg variant={variant.statusImg} />
-              <Heading as="h1" style={{ ...containerMain, ...heading }}>
+              <Heading as="h1" style={heading}>
                 {/* wrapped to Markdown, otherwise it will escape <span></span> elements */}
                 <Markdown>{variant.titleText}</Markdown>
               </Heading>
@@ -134,7 +134,10 @@ const ApplicationStatusEmail = ({
                       <Heading as="h2" style={feedback}>
                         {texts.feedbackTitle}
                       </Heading>
-                      <Link style={fullWidthButton}>
+                      <Link
+                        href="https://text-compare.com/"
+                        style={fullWidthButton}
+                      >
                         {texts.feedbackButton}
                       </Link>
                     </>
@@ -202,8 +205,6 @@ const fullWidthButton = {
 } as React.CSSProperties;
 
 const heading = {
-  paddingTop: "24px",
-  paddingBottom: "24px",
   textAlign: "center",
   fontWeight: "600",
   fontSize: "28px",
