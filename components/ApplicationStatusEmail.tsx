@@ -134,10 +134,7 @@ const ApplicationStatusEmail = ({
                       <Heading as="h2" style={feedback}>
                         {texts.feedbackTitle}
                       </Heading>
-                      <Link
-                        href="https://text-compare.com/"
-                        style={fullWidthButton}
-                      >
+                      <Link href="{{feedbackLink}}" style={fullWidthButton}>
                         {texts.feedbackButton}
                       </Link>
                     </>
