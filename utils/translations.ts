@@ -61,7 +61,7 @@ export const mpaTexts = {
   validateEmail: {
     title: "Potrvďte email pre načítanie parkovacích kariet",
     description:
-      "Pre pokračovanie s načítaním Vašich parkovacích kariet kliknite na tlačidlo, ktoré Vás presmeruje do mobilnej aplikácii a načíta Vaše dostupné parkovacie karty.",
+      "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
     validateEmail: "Potvrdiť email",
   },
   feedback: {
