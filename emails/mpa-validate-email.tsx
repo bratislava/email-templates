@@ -1,4 +1,4 @@
-import { Column, Text, Row } from "@react-email/components";
+import { Column, Text, Row, Section } from "@react-email/components";
 import * as React from "react";
 import { StatusImgVariants } from "../utils/enums";
 import { mpaTexts as texts } from "../utils/translations";
@@ -18,9 +18,9 @@ export const MpaEmailValidationEmail = () => {
           <Text style={headerContentSubtitle}>
             {texts.validateEmail.description}
           </Text>
-          <div style={codeContainer}>
+          <Section style={codeBox}>
             <Text style={codeText}>{"{{token}}"}</Text>
-          </div>
+          </Section>
         </Column>
       </Row>
       <Footer />
@@ -36,15 +36,13 @@ const headerContentSubtitle = {
 
 const codeText = {
   fontSize: "32px",
-  padding: "24px 16px",
-  background: "#e6e6e6",
-  borderRadius: "8px",
-  width: "fit-content",
-  margin: "0px",
+  textAlign: 'center'
 };
 
-const codeContainer = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "24px",
+const codeBox = {
+  background: 'rgb(245, 244, 245)',
+  borderRadius: '4px',
+  marginRight: '30px',
+  marginBottom: '30px',
+  padding: '20px 10px',
 };
