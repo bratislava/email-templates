@@ -23,6 +23,11 @@ export const variants = {
     statusImg: StatusImgVariants.error,
     text: texts.mainTexts.errorTryAgain.content,
   },
+  errorNotSpecified: {
+    titleText: texts.mainTexts.errorNotSpecified.title,
+    statusImg: StatusImgVariants.error,
+    text: texts.mainTexts.errorNotSpecified.content,
+  },
   inProgress: {
     titleText: texts.mainTexts.inProgress.title,
     statusImg: StatusImgVariants.hourglass,
@@ -76,9 +81,25 @@ const ApplicationStatusEmail = ({
             <>
               <div style={{ marginTop: "36px" }}></div>
               <LinkButton
-                href="{{formLink}}"
+                href="{{slug}}"
                 isBlock
-                text={texts.editFormTitle}
+                text={
+                  variant === variants.errorVirus
+                    ? texts.reuploadAttachments
+                    : texts.editFormTitle
+                }
+              />
+            </>
+          )}
+          {[variants.errorNotSpecified, variants.inProgress].includes(
+            variant
+          ) && (
+            <>
+              <div style={{ marginTop: "36px" }}></div>
+              <LinkButton
+                href={`{{feHost}}/moje-ziadosti?sekcia=odosiela-sa"`}
+                isBlock
+                text={texts.redirectMyApplications}
               />
             </>
           )}

@@ -11,10 +11,15 @@ export const kontoTexts = {
       content:
         'pri odosielaní Vašej žiadosti {{applicationName}} nastala neočakávaná chyba. <strong>Prosíme, vráťte sa do Vášho Bratislavského konta a upravte žiadosť.</strong> Bez toho sa žiaľ nevieme venovať jej vybaveniu. Rozpracovanú žiadosť nájdete v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odosiela-sa" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odosiela sa</a>.',
     },
+    errorNotSpecified: {
+      title: "Chyba pri odosielaní Vašej žiadosti",
+      content:
+        'pri odosielaní Vašej žiadosti {{applicationName}} nastala neočakávaná chyba. <strong>Chceme Vás však uistiť, že na jej úspešnom odoslaní usilovne pracujeme a akonáhle žiadosť doručíme našim kolegom a kolegyniam, budú sa venovať jej vybaveniu.</strong> Žiadosť nájdete v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odosiela-sa" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odosiela sa</a>. O ďalšom postupe Vás budeme informovať',
+    },
     inProgress: {
       title: "Na odoslaní Vašej žiadosti usilovne pracujeme",
       content:
-        'ospravedlňujeme sa, že odoslanie Vašej žiadosti {{applicationName}} v Bratislavskom konte trvá dlhšie než zvyčajne. <strong>Chceme Vás však uistiť, že na jej úspešnom odoslaní usilovne pracujeme a akonáhle žiadosť doručíme našim kolegom a kolegyniam, budú sa venovať jej vybaveniu.</strong> Detaily si môžete pozrieť vo svojom Bratislavskom konte v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odosiela-sa" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odosiela sa</a>. O ďalšom postupe Vás budeme informovať.',
+        'ospravedlňujeme sa, že odoslanie Vašej žiadosti {{applicationName}} v Bratislavskom konte trvá dlhšie než zvyčajne. <strong>Chceme Vás však uistiť, že na jej úspešnom odoslaní usilovne pracujeme a akonáhle sa tak udeje, budeme Vás informovať</strong>. Detaily si môžete pozrieť vo svojom Bratislavskom konte v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odosiela-sa" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odosiela sa</a>.',
     },
     sent: {
       title: "Vaša žiadosť bola odoslaná",
@@ -29,12 +34,12 @@ export const kontoTexts = {
     success: {
       title: "Vaša žiadosť bola úspešne vybavená",
       content:
-        'ďakujeme, že ste sa rozhodli podať žiadosť {{applicationName}} cez Bratislavské konto.<br/><br/><strong>Žiadosť bola úspešne vybavená.</strong> PDF dokument a detaily Vašej žiadosti nájdete vo svojom Bratislavskom konte, v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odoslané</a> po kliknutí na konkrétnu žiadosť.',
+        'ďakujeme, že ste sa rozhodli podať žiadosť {{applicationName}} cez Bratislavské konto.<br/><br/><strong>Žiadosť bola úspešne vybavená.</strong> PDF dokument so záväzným stanoviskom k investičnej činnosti a detaily Vašej žiadosti nájdete vo svojom Bratislavskom konte v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odoslané</a> po kliknutí na konkrétnu žiadosť.',
     },
     denied: {
       title: "Vaša žiadosť bola zamietnutá",
       content:
-        'ďakujeme, že ste sa rozhodli podať žiadosť {{applicationName}} cez Bratislavské konto.<br/><br/><strong>Žiadosť bola zamietnutá.</strong> V prílohe nájdete právoplatné rozhodnutie s odôvodnením zamietnutia. Detaily žiadosti si tiež môžete pozrieť aj vo svojom Bratislavskom konte, v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odoslané</a> po kliknutí na konkrétnu žiadosť.',
+        'ďakujeme, že ste sa rozhodli podať žiadosť {{applicationName}} cez Bratislavské konto.<br/><br/><strong>Žiadosť bola zamietnutá.</strong> V prílohe nájdete právoplatné rozhodnutie s odôvodnením zamietnutia. Detaily žiadosti si tiež môžete pozrieť aj vo svojom Bratislavskom konte v sekcii Moje žiadosti, v časti <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odoslané</a> po kliknutí na konkrétnu žiadosť.',
     },
     paasTestingInvitation: {
       title: "Poďte s nami testovať webstránku paas<span>.sk</span>",
@@ -46,6 +51,8 @@ export const kontoTexts = {
     },
   },
   editFormTitle: "Upraviť žiadosť",
+  reuploadAttachments: "Nahrať nové prílohy",
+  redirectMyApplications: "Prejsť na Moje žiadosti",
   feedbackTitle:
     "Prosíme, ohodnoťte Vašu skúsenosť a pomôžte mestu Bratislava zlepšovať svoje služby.",
   feedbackButton: "Vyplniť dotazník",

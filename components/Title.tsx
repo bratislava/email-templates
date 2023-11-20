@@ -15,8 +15,6 @@ const heading = {
 
 const containerMain = {
   paddingBottom: "32px",
-  paddingLeft: "24px",
-  paddingRight: "24px",
 };
 
 const Title = ({ statusImg, title }) => (
