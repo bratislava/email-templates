@@ -1,5 +1,9 @@
 export const kontoTexts = {
-  salutation: "Dobrý deň, {{firstName}},",
+  salutation: `{{#if firstName}}
+  Dobrý deň, {{firstName}},
+  {{else}}
+  Dobrý deň,
+  {{/if}}`,
   mainTexts: {
     errorVirus: {
       title: "Vo Vašej žiadosti sme našli vírus",
