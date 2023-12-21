@@ -5,7 +5,7 @@ import Title from "./Title";
 import Footer from "./Footer";
 import BasicEmail from "./BasicEmail";
 import LinkButton from "./LinkButton";
-import { StatusImgVariants, Variant } from "../utils/enums";
+import { StatusImgVariants, Variant, VariantFooter } from "../utils/enums";
 import { kontoTexts as texts } from "../utils/translations";
 
 interface FormStatusEmailProps {
@@ -58,6 +58,11 @@ export const variants = {
     statusImg: StatusImgVariants.castle,
     text: texts.mainTexts.paasTestingInvitation.content,
   },
+  taxesTestingInvitation: {
+    titleText: texts.mainTexts.taxesTestingInvitation.title,
+    statusImg: StatusImgVariants.castle,
+    text: texts.mainTexts.taxesTestingInvitation.content,
+  },
 };
 
 const ApplicationStatusEmail = ({
@@ -76,6 +81,16 @@ const ApplicationStatusEmail = ({
           >
             {variant.text}
           </Markdown>
+          {variant === variants.taxesTestingInvitation && (
+            <>
+              <Heading as="h2" style={secondaryHeading}>
+                {texts.mainTexts.taxesTestingInvitation.secondaryHeading}
+              </Heading>
+              <Markdown>
+                {texts.mainTexts.taxesTestingInvitation.orderedList}
+              </Markdown>
+            </>
+          )}
 
           {[variants.errorVirus, variants.errorTryAgain].includes(variant) && (
             <>
@@ -103,16 +118,17 @@ const ApplicationStatusEmail = ({
               />
             </>
           )}
-          {variant === variants.paasTestingInvitation && (
-            <>
-              <div style={{ marginTop: "24px" }}></div>
-              <LinkButton
-                href={texts.mainTexts.paasTestingInvitation.buttonAddress}
-                isBlock
-                text={texts.mainTexts.paasTestingInvitation.buttonTitle}
-              />
-            </>
-          )}
+          {variant === variants.paasTestingInvitation &&
+            buttonLink(
+              texts.mainTexts.paasTestingInvitation.buttonAddress,
+              texts.mainTexts.paasTestingInvitation.buttonTitle
+            )}
+
+          {variant === variants.taxesTestingInvitation &&
+            buttonLink(
+              texts.mainTexts.taxesTestingInvitation.buttonAddress,
+              texts.mainTexts.taxesTestingInvitation.buttonTitle
+            )}
           {[
             variants.sent,
             variants.delivered,
@@ -131,8 +147,14 @@ const ApplicationStatusEmail = ({
               />
             </>
           )}
-          <Footer />
-          {variant === variants.paasTestingInvitation && (
+          {variant === variants.paasTestingInvitation ||
+          variant === variants.taxesTestingInvitation ? (
+            <Footer variant={VariantFooter.develop} />
+          ) : (
+            <Footer variant={VariantFooter.using} />
+          )}
+          {(variant === variants.paasTestingInvitation ||
+            variant === variants.taxesTestingInvitation) && (
             <Markdown
               markdownCustomStyles={{
                 p: {
@@ -163,6 +185,14 @@ const feedback = {
   lineHeight: "28px",
 } as React.CSSProperties;
 
+const secondaryHeading = {
+  margin: 0,
+  textAlign: "center",
+  fontWeight: "600",
+  fontSize: "24px",
+  lineHeight: "32px",
+} as React.CSSProperties;
+
 const headerContentSubtitle = {
   fontSize: "17px",
 };
@@ -173,3 +203,20 @@ const border = {
   paddingTop: "36px",
   margin: 0,
 };
+function buttonLink(
+  buttonAddress: string,
+  buttonTitle: string
+): React.ReactNode {
+  return (
+    <>
+      <div style={{ marginTop: "24px" }}></div>
+      <LinkButton
+        // href={texts.mainTexts.paasTestingInvitation.buttonAddress}
+        href={buttonAddress}
+        isBlock
+        // text={texts.mainTexts.paasTestingInvitation.buttonTitle} />
+        text={buttonTitle}
+      />
+    </>
+  );
+}
