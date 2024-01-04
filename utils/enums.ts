@@ -12,3 +12,8 @@ export type Variant = {
   statusImg: StatusImgVariants;
   text: string;
 };
+
+export enum VariantFooter {
+  develop = "develop",
+  using = "using",
+}

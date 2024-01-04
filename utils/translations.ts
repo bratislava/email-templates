@@ -53,6 +53,25 @@ export const kontoTexts = {
       buttonAddress:
         "https://calendly.com/jakub-hruby/testovanie-webu-paas-sk?month=2023-10",
     },
+    taxesTestingInvitation: {
+      title: "Vyskúšajte nové online daňové priznanie",
+      content:
+        "pozývame Vás na <strong>uzatvorené testovanie</strong> nového online <strong>priznania k dani z nehnuteľností.</strong> <br/><br/>Hľadáme daňovníčky a daňovníkov, ktorí <strong>majú povinnosť podať priznanie do 31. januára 2024</strong> a radi by otestovali nové online priznanie <strong>od vyplnenia až po skutočné odoslanie.</strong> <br/><br/> ",
+      buttonTitle: "Prihlásiť sa na testovanie",
+      secondaryHeading: "Ako sa zapojiť?",
+      orderedList: `<ol>
+      <li>Prihláste sa na testovanie (cez tlačidlo nižšie).</li>
+      <li>
+        Dňa <strong>23. januára 2024</strong> dostanete od nás 
+        <strong>e-mail s odkazom na nové priznanie</strong>.
+      </li>
+      <li>
+        Vyplňte priznanie, podpíšte s 
+        <strong>elektronickým občianskym (eID)</strong> a odošlite 
+        <strong>do 31. januára 2024</strong>.
+      </li>`,
+      buttonAddress: "https://forms.office.com/e/ZK4db7eq49",
+    },
   },
   editFormTitle: "Upraviť žiadosť",
   reuploadAttachments: "Nahrať nové prílohy",
@@ -60,10 +79,12 @@ export const kontoTexts = {
   feedbackTitle:
     "Prosíme, ohodnoťte Vašu skúsenosť a pomôžte mestu Bratislava zlepšovať svoje služby.",
   feedbackButton: "Vyplniť dotazník",
-  footer:
+  footerUsing:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
+  footerDevelop:
+    "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
   unsubscribe:
-    'Ak sa chcete odhlásiť z odberu, <a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">kliknite sem</a>.',
+    '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
 };
 
 export const mpaTexts = {

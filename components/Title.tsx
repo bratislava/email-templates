@@ -1,8 +1,6 @@
 import { Heading } from "@react-email/components";
 import * as React from "react";
 import StatusImg from "../components/StatusImg";
-import { StatusImgVariants } from "../utils/enums";
-import { mpaTexts as texts } from "../utils/translations";
 
 const heading = {
   paddingTop: "24px",
