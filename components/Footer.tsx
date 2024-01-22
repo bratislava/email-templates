@@ -1,7 +1,8 @@
 import { Text } from "@react-email/components";
 import { Markdown } from "@react-email/markdown";
 import * as React from "react";
-import { mpaTexts as texts } from "../utils/translations";
+import { VariantFooter } from "../utils/enums";
+import { kontoTexts as texts } from "../utils/translations";
 
 const border = {
   borderBottom: "solid 2px",
@@ -10,7 +11,11 @@ const border = {
   margin: 0,
 };
 
-const Footer = () => (
+interface FooterlProps {
+  variant?: VariantFooter;
+}
+
+const Footer = ({ variant = VariantFooter.using }: FooterlProps) => (
   <>
     <Text style={border} />
     <Markdown
@@ -18,7 +23,9 @@ const Footer = () => (
         p: { marginBottom: "0px", marginTop: "32px" },
       }}
     >
-      {texts.footer}
+      {variant === VariantFooter.develop
+        ? texts.footerDevelop
+        : texts.footerUsing}
     </Markdown>
   </>
 );
