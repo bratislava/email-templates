@@ -203,6 +203,7 @@ const border = {
   paddingTop: "36px",
   margin: 0,
 };
+
 function buttonLink(
   buttonAddress: string,
   buttonTitle: string
@@ -210,13 +211,7 @@ function buttonLink(
   return (
     <>
       <div style={{ marginTop: "24px" }}></div>
-      <LinkButton
-        // href={texts.mainTexts.paasTestingInvitation.buttonAddress}
-        href={buttonAddress}
-        isBlock
-        // text={texts.mainTexts.paasTestingInvitation.buttonTitle} />
-        text={buttonTitle}
-      />
+      <LinkButton href={buttonAddress} isBlock text={buttonTitle} />
     </>
   );
 }
