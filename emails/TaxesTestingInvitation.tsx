@@ -3,8 +3,8 @@ import ApplicationStatusEmail, {
   variants,
 } from "../components/ApplicationStatusEmail";
 
-export const PaasTestingInvitation = () => {
+export const TaxesTestingInvitation = () => {
   return <ApplicationStatusEmail variant={variants.taxesTestingInvitation} />;
 };
 
-export default PaasTestingInvitation;
+export default TaxesTestingInvitation;
