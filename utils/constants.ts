@@ -7,7 +7,7 @@ export const HeaderIconVariant = {
     altName: "Bratislava Castle",
   },
   paas: {
-    address: "/email-header-logo-paas.svg",
+    address: "/email-header-logo-paas.png",
     altName: "Paas logo",
   },
 };
