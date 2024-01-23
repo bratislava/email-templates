@@ -17,3 +17,8 @@ export enum VariantFooter {
   develop = "develop",
   using = "using",
 }
+
+export type HeaderIconVariantType = {
+  address: string;
+  altName: string;
+};
