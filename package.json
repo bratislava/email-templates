@@ -2,6 +2,7 @@
   "name": "emails",
   "version": "1.0.0",
   "description": "",
+  "license": "EUPL-1.2",
   "main": "index.js",
   "scripts": {
     "dev": "email dev",
