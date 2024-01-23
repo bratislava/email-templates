@@ -1,17 +1,15 @@
 {
   "name": "emails",
-  "version": "0.0.18",
-  "private": true,
-  "workspaces": [
-    ".react-email"
-  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "email dev",
-    "export": "email export"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@react-email/components": "0.0.6",
-    "@react-email/markdown": "0.0.6",
-    "react-email": "1.9.3"
+    "@react-email/components": "0.0.14",
+    "@react-email/markdown": "^0.0.8",
+    "react-email": "2.0.0"
   }
 }
