@@ -5,10 +5,11 @@ import { mpaTexts as texts } from "../utils/translations";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 import BasicEmail from "../components/BasicEmail";
+import { HeaderIconVariant } from "../utils/constants";
 
 export const MpaEmailValidationEmail = () => {
   return (
-    <BasicEmail>
+    <BasicEmail headerIconVariant={HeaderIconVariant.paas}>
       <Title
         statusImg={StatusImgVariants.hourglass}
         title={texts.validateEmail.title}
@@ -36,13 +37,13 @@ const headerContentSubtitle = {
 
 const codeText = {
   fontSize: "32px",
-  textAlign: 'center'
+  textAlign: "center",
 };
 
 const codeBox = {
-  background: 'rgb(245, 244, 245)',
-  borderRadius: '4px',
-  marginRight: '30px',
-  marginBottom: '30px',
-  padding: '20px 10px',
+  background: "rgb(245, 244, 245)",
+  borderRadius: "4px",
+  marginRight: "30px",
+  marginBottom: "30px",
+  padding: "20px 10px",
 };

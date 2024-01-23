@@ -9,6 +9,7 @@ import {
 import * as React from "react";
 
 import Header from "../components/Header";
+import { HeaderIconVariantType } from "../utils/enums";
 
 const main = {
   backgroundColor: "#f3f3f5",
@@ -31,12 +32,17 @@ const container = {
   backgroundColor: "#ffffff",
 };
 
-const BasicEmail = ({ children }) => (
+interface BasicEmailProps {
+  children: React.ReactNode;
+  headerIconVariant?: HeaderIconVariantType;
+}
+
+const BasicEmail = ({ children, headerIconVariant }: BasicEmailProps) => (
   <Html>
     <Head />
     <Body style={main}>
       <Container style={container}>
-        <Header />
+        <Header iconVariant={headerIconVariant} />
         <Row style={containerMain}>
           <Column>{children}</Column>
         </Row>
