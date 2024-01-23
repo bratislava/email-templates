@@ -60,17 +60,41 @@ export const kontoTexts = {
       buttonTitle: "Prihlásiť sa na testovanie",
       secondaryHeading: "Ako sa zapojiť?",
       orderedList: `<ol>
-      <li>Prihláste sa na testovanie (cez tlačidlo nižšie).</li>
-      <li>
-        Dňa <strong>23. januára 2024</strong> dostanete od nás 
-        <strong>e-mail s odkazom na nové priznanie</strong>.
-      </li>
-      <li>
-        Vyplňte priznanie, podpíšte s 
-        <strong>elektronickým občianskym (eID)</strong> a odošlite 
-        <strong>do 31. januára 2024</strong>.
-      </li>`,
+        <li>Prihláste sa na testovanie (cez tlačidlo nižšie).</li>
+        <li>
+          Dňa <strong>23. januára 2024</strong> dostanete od nás 
+          <strong>e-mail s odkazom na nové priznanie</strong>.
+        </li>
+        <li>
+          Vyplňte priznanie, podpíšte s 
+          <strong>elektronickým občianskym (eID)</strong> a odošlite 
+          <strong>do 31. januára 2024</strong>.
+        </li>
+      </ol>`,
       buttonAddress: "https://forms.office.com/e/ZK4db7eq49",
+    },
+    taxesTestingInvitationSecond: {
+      title: "Nové daňové priznanie je tu",
+      content:
+        "ďakujeme za Váš záujem zapojiť sa do uzatvoreného testovania nového online priznania k dani z nehnuteľností. Našim cieľom je otestovať <strong>celý proces podávania priznania, od vyplnenia až po jeho odoslanie</strong>. <br/><br/>",
+      buttonTitle: "Vyplniť daňové priznanie",
+      secondaryHeading:
+        "Vyplňte priznanie do 31. januára 2024 iba v prípade, že:",
+      unorderedListFirst: `<ul>
+        <li>ste <strong>v roku 2023</strong> nadobudli nehnuteľnosť kúpou, darovaním či dražením,</li>
+        <li>ste <strong>v roku 2023</strong> Vašu nehnuteľnosť predali, darovali, vydražili,</li>
+        <li>alebo potrebujete vysporiadať bezpodielové spoluvlastníctvo manželov po rozvode.</li>
+      </ul>`,
+      ternaryHeading: "Na vyplnenie budete potrebovať:",
+      unorderedListSecond: `<ul>
+        <li><strong>aktívny elektronický občiansky preukaz</strong> (eID),</li>
+        <li><strong>list/y vlastníctva</strong> k predmetnej nehnuteľnosti,</li>
+        <li>zmluvu o nadobudnutí nehnuteľnosti.</li>
+      </ul>`,
+      buttonAddress:
+        "https://konto.bratislava.sk/mestske-sluzby/priznanie-k-dani-z-nehnutelnosti",
+      secondContent: `Ak by ste s vyplnením potrebovali pomôcť, neváhajte kontaktovať vedúcu oddelenia miestnych daní, poplatkov a licencií Vladimíru Ráczovú na <a href="mailto:vladimira.raczova@bratislava.sk" style="font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">vladimira.raczova@bratislava.sk</a>.`,
+      secondContentTitle: "Potrebujete pomoc?",
     },
   },
   editFormTitle: "Upraviť žiadosť",
