@@ -107,6 +107,9 @@ const ApplicationStatusEmail = ({
                     .unorderedListFirst
                 }
               </Markdown>
+              <Markdown>
+                {texts.mainTexts.taxesTestingInvitationSecond.secondContent}
+              </Markdown>
               <Heading as="h2" style={secondaryHeading}>
                 {texts.mainTexts.taxesTestingInvitationSecond.ternaryHeading}
               </Heading>
@@ -166,13 +169,10 @@ const ApplicationStatusEmail = ({
             <>
               <div style={{ marginTop: "24px" }}></div>
               <Heading as="h2" style={secondaryHeading}>
-                {
-                  texts.mainTexts.taxesTestingInvitationSecond
-                    .secondContentTitle
-                }
+                {texts.mainTexts.taxesTestingInvitationSecond.thirdContentTitle}
               </Heading>
               <Markdown>
-                {texts.mainTexts.taxesTestingInvitationSecond.secondContent}
+                {texts.mainTexts.taxesTestingInvitationSecond.thirdContent}
               </Markdown>
             </>
           )}
