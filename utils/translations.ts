@@ -60,17 +60,44 @@ export const kontoTexts = {
       buttonTitle: "Prihlásiť sa na testovanie",
       secondaryHeading: "Ako sa zapojiť?",
       orderedList: `<ol>
-      <li>Prihláste sa na testovanie (cez tlačidlo nižšie).</li>
-      <li>
-        Dňa <strong>23. januára 2024</strong> dostanete od nás 
-        <strong>e-mail s odkazom na nové priznanie</strong>.
-      </li>
-      <li>
-        Vyplňte priznanie, podpíšte s 
-        <strong>elektronickým občianskym (eID)</strong> a odošlite 
-        <strong>do 31. januára 2024</strong>.
-      </li>`,
+        <li>Prihláste sa na testovanie (cez tlačidlo nižšie).</li>
+        <li>
+          Dňa <strong>23. januára 2024</strong> dostanete od nás 
+          <strong>e-mail s odkazom na nové priznanie</strong>.
+        </li>
+        <li>
+          Vyplňte priznanie, podpíšte s 
+          <strong>elektronickým občianskym (eID)</strong> a odošlite 
+          <strong>do 31. januára 2024</strong>.
+        </li>
+      </ol>`,
       buttonAddress: "https://forms.office.com/e/ZK4db7eq49",
+    },
+    taxesTestingInvitationSecond: {
+      title: "Nové daňové priznanie je tu, aj s podpisovaním s eID",
+      content:
+        "ďakujeme veľmi pekne za Vašu dôveru a záujem zapojiť sa do uzavretého BETA testovania nového online priznania k dani z nehnuteľností, ktorého cieľom je otestovať celý proces podávania priznania <strong>od vyplnenia</strong> až <strong>po jeho odoslanie pomocou eID</strong>. <br/><br/>",
+      buttonTitle: "Vyplniť daňové priznanie",
+      secondaryHeading:
+        "Priznania podané v rámci Bratislavského konta sú považované za skutočné priznania, preto podajte priznanie do 31. januára 2024 iba ak:",
+      unorderedListFirst: `<ul>
+        <li>ste <strong>v roku 2023</strong> nadobudli nehnuteľnosť kúpou, darovaním či dražením,</li>
+        <li>alebo ste <strong>v roku 2023</strong> Vašu nehnuteľnosť predali, darovali, vydražili,</li>
+        <li>alebo potrebujete vysporiadať bezpodielové spoluvlastníctvo manželov po rozvode.</li>
+      </ul>`,
+      ternaryHeading: "Na vyplnenie budete potrebovať:",
+      unorderedListSecond: `<ul>
+        <li><strong>Bratislavské konto založené cez email</strong>, ktorý ste zadali pri prihlásení do testovania v decembri,</li>
+        <li><strong>aktívny elektronický občiansky preukaz</strong> (eID),</li>
+        <li><strong>list/y vlastníctva</strong> k predmetnej nehnuteľnosti,</li>
+        <li>zmluvu o nadobudnutí nehnuteľnosti.</li>
+      </ul>`,
+      buttonAddress:
+        "https://konto.bratislava.sk/mestske-sluzby/priznanie-k-dani-z-nehnutelnosti",
+      secondContent:
+        "V prípade, že sa vás žiaden z vyššie spomenutých prípadov netýka, <strong>priznanie prosím nevypĺňajte</strong>.",
+      thirdContentTitle: "Potrebujete pomoc?",
+      thirdContent: `Ak by ste s vyplnením potrebovali pomôcť, neváhajte kontaktovať vedúcu oddelenia miestnych daní, poplatkov a licencií Vladimíru Ráczovú na <a href="mailto:vladimira.raczova@bratislava.sk" style="font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">vladimira.raczova@bratislava.sk</a>.`,
     },
   },
   editFormTitle: "Upraviť žiadosť",
@@ -91,7 +118,7 @@ export const mpaTexts = {
   footer:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
   validateEmail: {
-    title: "Potrvďte email pre načítanie parkovacích kariet",
+    title: "Potvrďte email pre načítanie parkovacích kariet",
     description:
       "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
     validateEmail: "Potvrdiť email",

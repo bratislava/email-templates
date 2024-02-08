@@ -63,6 +63,11 @@ export const variants = {
     statusImg: StatusImgVariants.castle,
     text: texts.mainTexts.taxesTestingInvitation.content,
   },
+  taxesTestingInvitationSecond: {
+    titleText: texts.mainTexts.taxesTestingInvitationSecond.title,
+    statusImg: StatusImgVariants.castle,
+    text: texts.mainTexts.taxesTestingInvitationSecond.content,
+  },
 };
 
 const ApplicationStatusEmail = ({
@@ -88,6 +93,31 @@ const ApplicationStatusEmail = ({
               </Heading>
               <Markdown>
                 {texts.mainTexts.taxesTestingInvitation.orderedList}
+              </Markdown>
+            </>
+          )}
+          {variant === variants.taxesTestingInvitationSecond && (
+            <>
+              <Heading as="h2" style={secondaryHeading}>
+                {texts.mainTexts.taxesTestingInvitationSecond.secondaryHeading}
+              </Heading>
+              <Markdown>
+                {
+                  texts.mainTexts.taxesTestingInvitationSecond
+                    .unorderedListFirst
+                }
+              </Markdown>
+              <Markdown>
+                {texts.mainTexts.taxesTestingInvitationSecond.secondContent}
+              </Markdown>
+              <Heading as="h2" style={secondaryHeading}>
+                {texts.mainTexts.taxesTestingInvitationSecond.ternaryHeading}
+              </Heading>
+              <Markdown>
+                {
+                  texts.mainTexts.taxesTestingInvitationSecond
+                    .unorderedListSecond
+                }
               </Markdown>
             </>
           )}
@@ -129,6 +159,23 @@ const ApplicationStatusEmail = ({
               texts.mainTexts.taxesTestingInvitation.buttonAddress,
               texts.mainTexts.taxesTestingInvitation.buttonTitle
             )}
+          {variant === variants.taxesTestingInvitationSecond &&
+            buttonLink(
+              texts.mainTexts.taxesTestingInvitationSecond.buttonAddress,
+              texts.mainTexts.taxesTestingInvitationSecond.buttonTitle
+            )}
+
+          {variant === variants.taxesTestingInvitationSecond && (
+            <>
+              <div style={{ marginTop: "24px" }}></div>
+              <Heading as="h2" style={secondaryHeading}>
+                {texts.mainTexts.taxesTestingInvitationSecond.thirdContentTitle}
+              </Heading>
+              <Markdown>
+                {texts.mainTexts.taxesTestingInvitationSecond.thirdContent}
+              </Markdown>
+            </>
+          )}
           {[
             variants.sent,
             variants.delivered,
@@ -147,8 +194,10 @@ const ApplicationStatusEmail = ({
               />
             </>
           )}
+
           {variant === variants.paasTestingInvitation ||
-          variant === variants.taxesTestingInvitation ? (
+          variant === variants.taxesTestingInvitation ||
+          variant === variants.taxesTestingInvitationSecond ? (
             <Footer variant={VariantFooter.develop} />
           ) : (
             <Footer variant={VariantFooter.using} />

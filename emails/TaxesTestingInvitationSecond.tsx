@@ -4,7 +4,9 @@ import ApplicationStatusEmail, {
 } from "../components/ApplicationStatusEmail";
 
 export const TaxesTestingInvitation = () => {
-  return <ApplicationStatusEmail variant={variants.taxesTestingInvitation} />;
+  return (
+    <ApplicationStatusEmail variant={variants.taxesTestingInvitationSecond} />
+  );
 };
 
 export default TaxesTestingInvitation;
