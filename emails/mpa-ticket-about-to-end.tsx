@@ -5,10 +5,11 @@ import { mpaTexts as texts } from "../utils/translations";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 import BasicEmail from "../components/BasicEmail";
+import { HeaderIconVariant } from "../utils/constants";
 
 export const MpaEmailValidationEmail = () => {
   return (
-    <BasicEmail>
+    <BasicEmail headerIconVariant={HeaderIconVariant.paas}>
       <Title
         statusImg={StatusImgVariants.hourglass}
         title={texts.ticketAboutToEnd.title}
