@@ -118,7 +118,7 @@ export const mpaTexts = {
   footer:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
   validateEmail: {
-    title: "Potrvďte email pre načítanie parkovacích kariet",
+    title: "Potvrďte email pre načítanie parkovacích kariet",
     description:
       "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
     validateEmail: "Potvrdiť email",
