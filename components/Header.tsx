@@ -2,7 +2,8 @@ import { Column, Img, Row } from "@react-email/components";
 
 import * as React from "react";
 
-import { cdnImageAddress } from "../utils/constants";
+import { cdnImageAddress, HeaderIconVariant } from "../utils/constants";
+import { HeaderIconVariantType } from "../utils/enums";
 
 const logoImg = {
   margin: "20px auto",
@@ -14,14 +15,17 @@ const border = {
   paddingTop: "24px",
   margin: 0,
 };
+interface HeaderProps {
+  iconVariant?: HeaderIconVariantType;
+}
 
-const Header = () => (
+const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => (
   <Row style={{ ...border, paddingTop: "0" }}>
     <Column>
       <Img
         height={40}
-        src={`${cdnImageAddress}/bratislava-castle-medium.png`}
-        alt="Mesto Bratislava"
+        src={`${cdnImageAddress}${iconVariant.address}`}
+        alt={iconVariant.altName}
         style={logoImg}
       />
     </Column>
