@@ -111,7 +111,14 @@ export const kontoTexts = {
   footerDevelop:
     "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
   unsubscribe:
-    '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
+    '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Odhlásenie z odberu</a>',
+  campaignTaxesProcessed: {
+    title: "Vaše priznanie k dani z nehnuteľností bolo spracované",
+    content: "radi by sme Vás informovali, že <strong>priznanie k dani z nehnuteľností na rok 2024 bolo úspešne spracované</strong>.<br/><br/>V priebehu najbližších týždňov Vám prostredníctvom pošty doručíme rozhodnutie o dani z nehnuteľností do vlastných rúk.<br/><br/>V prípade, že sa chcete pošte vyhnúť, založte si <strong>do 17. apríla</strong> Bratislavské konto a <strong>najskôr 29. apríla</strong> Vám doňho doručíme všetky potrebné informácie k platbe dane z nehnuteľností.",
+    buttonTitle: "Registrovať sa do Bratislavského konta",
+    buttonAddress: "https://konto.bratislava.sk/registracia",
+  },
+  footer2024: 'Viac informácií o dani z nehnuteľností nájdete v <a href="https://www.bratislava.sk/mesto-bratislava/dane-a-poplatky/dan-z-nehnutelnosti/digitalna-platba" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Najčastejších otázkach</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/konto/vyhlasenie-o-spracovani-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.'
 };
 
 export const mpaTexts = {

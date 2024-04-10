@@ -11,6 +11,15 @@
   "dependencies": {
     "@react-email/components": "0.0.14",
     "@react-email/markdown": "^0.0.8",
-    "react-email": "2.0.0"
+    "react-email": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18.17.x",
+    "npm": ">=6.0.0",
+    "yarn": "1.22"
+  },
+  "volta": {
+    "node": "18.17.0",
+    "yarn": "1.22.0"
   }
 }

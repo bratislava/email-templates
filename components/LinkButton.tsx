@@ -15,6 +15,8 @@ const fullWidthButton = {
   lineHeight: "24px",
   paddingTop: "12px",
   paddingBottom: "12px",
+  paddingLeft: "16px",
+  paddingRight: "16px",
 } as React.CSSProperties;
 
 const LinkButton = ({ text, isBlock, href }) => (
