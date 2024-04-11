@@ -7,6 +7,7 @@ import BasicEmail from "./BasicEmail";
 import LinkButton from "./LinkButton";
 import { StatusImgVariants, Variant, VariantFooter } from "../utils/enums";
 import { kontoTexts as texts } from "../utils/translations";
+import Feedback from "./Feedback";
 
 interface FormStatusEmailProps {
   variant: Variant;
@@ -182,17 +183,7 @@ const ApplicationStatusEmail = ({
             variants.success,
             variants.denied,
           ].includes(variant) && (
-            <>
-              <Text style={border} />
-              <Heading as="h2" style={feedback}>
-                {texts.feedbackTitle}
-              </Heading>
-              <LinkButton
-                href="{{feedbackLink}}"
-                isBlock
-                text={texts.feedbackButton}
-              />
-            </>
+            <Feedback />
           )}
 
           {variant === variants.paasTestingInvitation ||
