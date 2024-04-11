@@ -118,7 +118,19 @@ export const kontoTexts = {
     buttonTitle: "Registrovať sa do Bratislavského konta",
     buttonAddress: "https://konto.bratislava.sk/registracia",
   },
-  footer2024: 'Viac informácií o dani z nehnuteľností nájdete v <a href="https://www.bratislava.sk/mesto-bratislava/dane-a-poplatky/dan-z-nehnutelnosti/digitalna-platba" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Najčastejších otázkach</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/konto/vyhlasenie-o-spracovani-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.'
+  footer2024: 'Viac informácií o dani z nehnuteľností nájdete v <a href="https://www.bratislava.sk/mesto-bratislava/dane-a-poplatky/dan-z-nehnutelnosti/digitalna-platba" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Najčastejších otázkach</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/konto/vyhlasenie-o-spracovani-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.',
+  payment2024: {
+    title: "V Bratislavskom konte pribudla Vaša daň z nehnuteľností",
+    payFastDigitalyAnywhere: "tento rok máte opäť možnosť zaplatiť svoju daň z nehnuteľností rýchlo a digitálne, kdekoľvek sa nachádzate.",
+    infoPayment: '<span style="font-weight: 600;font-size: 16px;line-height: 24px;" class="font-weight-600 font-size-16 line-height-24">Zaplaťte daň z nehnuteľností online,</span> a to platobnou kartou, cez QR kód či prevodom. Detail platby si môžete pozrieť v Bratislavskom konte. Prístup do konta nájdete nižšie.',
+    hasEdeskInfo: '{{#if hasEdesk}}<span style="font-weight: 600;font-size: 14px;line-height: 20px;" class="font-weight-600 font-size-14 line-height-20">Keďže máte aktívnu elektronickú schránku, kvôli súčasnej právnej úprave sme povinní Vám doručiť rozhodnutie o dani z nehnuteľností cez slovensko.sk.</span>{{/if}}',
+    paymentAmount: "Výsledná suma",
+    seeDetailsInAccount: "Všetky potrebné informácie o možnostiach platby ako aj detail Vašej dane z nehnuteľností nájdete vo svojom Bratislavskom konte.",
+    seeDetailsInAccountButton: "Zobraziť detail dane v konte",
+    seeDetailsInAccountButtonAddress: "https://konto.bratislava.sk",
+    payment15days: 'Daň je splatná v termíne <span style="font-weight: 600;font-size: 14px;line-height: 20px;" class="font-weight-600 font-size-14 line-height-20">do 15 dní odo dňa právoplatnosti rozhodnutia {{#if isInstallments}}podľa splátkového kalendára{{/if}}.',
+    postDelivery: '{{#if isPostDelivery}}<span style="font-weight: 600;font-size: 14px;line-height: 20px;" class="font-weight-600 font-size-14 line-height-20">Zároveň Vám prostredníctvom pošty doručíme aj rozhodnutie o dani z nehnuteľností do vlastných rúk.</span><br/><br/>Ak by ste sa chceli v budúcnosti návšteve pošty vyhnúť, zvoľte si v Bratislavskom konte doručovanie oznámení o miestnych daniach a poplatkoch už len do Bratislavského konta.{{/if}}'
+  }
 };
 
 export const mpaTexts = {
