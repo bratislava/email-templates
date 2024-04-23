@@ -138,6 +138,9 @@ export const kontoTexts = {
       'Daň je splatná v termíne <span style="font-weight: 600;font-size: 14px;line-height: 20px;" class="font-weight-600 font-size-14 line-height-20">do 15 dní odo dňa právoplatnosti rozhodnutia {{#if isInstallments}}podľa splátkového kalendára{{/if}}.',
     postDelivery:
       '{{#if isPostDelivery}}<span style="font-weight: 600;font-size: 14px;line-height: 20px;" class="font-weight-600 font-size-14 line-height-20">Zároveň Vám prostredníctvom pošty doručíme aj rozhodnutie o dani z nehnuteľností do vlastných rúk.</span><br/><br/>Ak by ste sa chceli v budúcnosti návšteve pošty vyhnúť, zvoľte si v Bratislavskom konte doručovanie oznámení o miestnych daniach a poplatkoch už len do Bratislavského konta.{{/if}}',
+    paymentSuccessfulTitle: "Vaša platba dane z nehnuteľností bola prijatá",
+    thanksForUsingDigitalPayment:
+      "Ďakujeme, že ste sa rozhodli zaplatiť daň digitálne.",
   },
   verifyUserAppealTitle:
     "Overte svoju identitu v Bratislavskom konte do 22. apríla",
