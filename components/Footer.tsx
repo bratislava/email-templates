@@ -20,7 +20,13 @@ const Footer = ({ variant = VariantFooter.using }: FooterlProps) => (
     <Text style={border} />
     <Markdown
       markdownCustomStyles={{
-        p: { marginBottom: "0px", marginTop: "32px" },
+        p: {
+          marginBottom: "0px",
+          marginTop: "32px",
+          fontWeight: "400",
+          fontSize: "16px",
+          lineHeight: "24px",
+        },
       }}
     >
       {variant === VariantFooter.develop
