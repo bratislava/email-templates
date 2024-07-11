@@ -126,7 +126,11 @@ export const mpaTexts = {
   feedback: {
     title: "Feedback od používateľa",
     description: "Nasledovný feedback odoslal používateľ:",
-    feedbackTemplate: "{{feedbackType}} - {{feedbackValue}}",
+    userEmail: "Email používateľa: {{userEmail}}",
+    feedbackType: "Typ: {{feedbackType}}",
+    feedbackContent: "Správa: {{feedbackValue}}",
+    userId: "ID používateľa: {{userId}}",
+    appVersion: "Verzia aplikácie: {{appVersion}}",
   },
   ticketEnded: {
     title: "Váš parkovací listok skončil",

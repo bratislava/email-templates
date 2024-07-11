@@ -16,9 +16,15 @@ export const MpaEmailValidationEmail = () => {
           <Text style={headerContentSubtitle}>
             {texts.feedback.description}
           </Text>
+          <Text style={headerContentSubtitle}>{texts.feedback.userEmail}</Text>
           <Text style={headerContentSubtitle}>
-            {texts.feedback.feedbackTemplate}
+            {texts.feedback.feedbackType}
           </Text>
+          <Text style={headerContentSubtitle}>
+            {texts.feedback.feedbackContent}
+          </Text>
+          <Text style={headerContentSubtitle}>{texts.feedback.appVersion}</Text>
+          <Text style={headerContentSubtitle}>{texts.feedback.userId}</Text>
         </Column>
       </Row>
       <Footer />
