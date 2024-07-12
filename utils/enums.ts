@@ -22,3 +22,8 @@ export type HeaderIconVariantType = {
   address: string;
   altName: string;
 };
+
+export enum Language {
+  en = "en",
+  sk = "sk",
+}

@@ -1,7 +1,7 @@
 import { Text } from "@react-email/components";
 import { Markdown } from "@react-email/markdown";
 import * as React from "react";
-import { VariantFooter } from "../utils/enums";
+import { Language, VariantFooter } from "../utils/enums";
 import { kontoTexts as texts } from "../utils/translations";
 
 const border = {
@@ -13,21 +13,29 @@ const border = {
 
 interface FooterlProps {
   variant?: VariantFooter;
+  language?: Language;
 }
 
-const Footer = ({ variant = VariantFooter.using }: FooterlProps) => (
-  <>
-    <Text style={border} />
-    <Markdown
-      markdownCustomStyles={{
-        p: { marginBottom: "0px", marginTop: "32px" },
-      }}
-    >
-      {variant === VariantFooter.develop
-        ? texts.footerDevelop
-        : texts.footerUsing}
-    </Markdown>
-  </>
-);
+const Footer = ({
+  variant = VariantFooter.using,
+  language = Language.sk,
+}: FooterlProps) => {
+  const localizedTexts = language === Language.sk ? texts : texts.en;
+
+  return (
+    <>
+      <Text style={border} />
+      <Markdown
+        markdownCustomStyles={{
+          p: { marginBottom: "0px", marginTop: "32px" },
+        }}
+      >
+        {variant === VariantFooter.develop
+          ? localizedTexts.footerDevelop
+          : localizedTexts.footerUsing}
+      </Markdown>
+    </>
+  );
+};
 
 export default Footer;
