@@ -1,7 +1,7 @@
 import { Column, Text, Row, Section } from "@react-email/components";
 import * as React from "react";
-import { StatusImgVariants } from "../utils/enums";
-import { mpaTexts as texts } from "../locales/sk/translations";
+import { Language, StatusImgVariants } from "../utils/enums";
+import { mpaTexts as texts } from "../locales/en/translations";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 import BasicEmail from "../components/BasicEmail";
@@ -24,7 +24,7 @@ export const MpaEmailValidationEmail = () => {
           </Section>
         </Column>
       </Row>
-      <Footer />
+      <Footer language={Language.en} />
     </BasicEmail>
   );
 };

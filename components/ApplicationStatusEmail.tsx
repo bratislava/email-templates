@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import BasicEmail from "./BasicEmail";
 import LinkButton from "./LinkButton";
 import { StatusImgVariants, Variant, VariantFooter } from "../utils/enums";
-import { kontoTexts as texts } from "../utils/translations";
+import { kontoTexts as texts } from "../locales/sk/translations";
 
 interface FormStatusEmailProps {
   variant: Variant;

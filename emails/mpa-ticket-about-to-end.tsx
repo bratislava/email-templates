@@ -1,7 +1,7 @@
 import { Column, Text, Row } from "@react-email/components";
 import * as React from "react";
 import { StatusImgVariants } from "../utils/enums";
-import { mpaTexts as texts } from "../utils/translations";
+import { mpaTexts as texts } from "../locales/sk/translations";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 import BasicEmail from "../components/BasicEmail";

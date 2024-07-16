@@ -120,13 +120,16 @@ export const mpaTexts = {
   validateEmail: {
     title: "Potvrďte email pre načítanie parkovacích kariet",
     description:
-      "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
-    validateEmail: "Potvrdiť email",
+      "Pre pokračovanie s načítaním Vašich {{cardType}}parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
   },
   feedback: {
     title: "Feedback od používateľa",
     description: "Nasledovný feedback odoslal používateľ:",
-    feedbackTemplate: "{{feedbackType}} - {{feedbackValue}}",
+    userEmail: "Email používateľa: {{userEmail}}",
+    feedbackType: "Typ: {{feedbackType}}",
+    feedbackContent: "Správa: {{feedbackValue}}",
+    userId: "ID používateľa: {{userId}}",
+    appVersion: "Verzia aplikácie: {{appVersion}}",
   },
   ticketEnded: {
     title: "Váš parkovací listok skončil",
