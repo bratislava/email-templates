@@ -120,7 +120,7 @@ export const mpaTexts = {
   validateEmail: {
     title: "Potvrďte email pre načítanie parkovacích kariet",
     description:
-      "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
+      "Pre pokračovanie s načítaním Vašich {{cardType}}parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
   },
   feedback: {
     title: "Feedback od používateľa",
