@@ -1,7 +1,7 @@
 import { Column, Text, Row, Section } from "@react-email/components";
 import * as React from "react";
 import { Language, StatusImgVariants } from "../utils/enums";
-import { mpaTexts as texts } from "../utils/translations";
+import { mpaTexts as texts } from "../locales/en/translations";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 import BasicEmail from "../components/BasicEmail";
@@ -12,12 +12,12 @@ export const MpaEmailValidationEmail = () => {
     <BasicEmail headerIconVariant={HeaderIconVariant.paas}>
       <Title
         statusImg={StatusImgVariants.hourglass}
-        title={texts.validateEmail.en.title}
+        title={texts.validateEmail.title}
       />
       <Row>
         <Column>
           <Text style={headerContentSubtitle}>
-            {texts.validateEmail.en.description}
+            {texts.validateEmail.description}
           </Text>
           <Section style={codeBox}>
             <Text style={codeText}>{"{{token}}"}</Text>

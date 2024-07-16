@@ -112,12 +112,6 @@ export const kontoTexts = {
     "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
   unsubscribe:
     '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
-  en: {
-    footerDevelop:
-      "Thank you for helping us develop digital services.<br/>Your Capital City of the Slovak Republic, Bratislava",
-    footerUsing:
-      "Thank you for using our services.<br/>Your Capital City of the Slovak Republic, Bratislava",
-  },
 };
 
 export const mpaTexts = {
@@ -127,11 +121,6 @@ export const mpaTexts = {
     title: "Potvrďte email pre načítanie parkovacích kariet",
     description:
       "Pre pokračovanie s načítaním Vašich parkovacích kariet zadajte nasledujúci kód v mobilnej aplikácii.",
-    en: {
-      title: "Confirm email to load parking cards",
-      description:
-        "To continue loading your parking cards, enter the following code in the mobile application.",
-    },
   },
   feedback: {
     title: "Feedback od používateľa",

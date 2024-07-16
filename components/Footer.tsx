@@ -2,7 +2,8 @@ import { Text } from "@react-email/components";
 import { Markdown } from "@react-email/markdown";
 import * as React from "react";
 import { Language, VariantFooter } from "../utils/enums";
-import { kontoTexts as texts } from "../utils/translations";
+import { kontoTexts as texts } from "../locales/sk/translations";
+import { kontoTexts as enTexts } from "../locales/en/translations";
 
 const border = {
   borderBottom: "solid 2px",
@@ -20,7 +21,7 @@ const Footer = ({
   variant = VariantFooter.using,
   language = Language.sk,
 }: FooterlProps) => {
-  const localizedTexts = language === Language.sk ? texts : texts.en;
+  const localizedTexts = language === Language.sk ? texts : enTexts;
 
   return (
     <>
