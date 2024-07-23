@@ -9,6 +9,6 @@ export const mpaTexts = {
   validateEmail: {
     title: "Confirm email to load parking cards",
     description:
-      "To continue loading your {{cardType}}parking cards, enter the following code in the mobile application.",
+      "To continue loading your {{#if isBPK}}bonus {{else if isNPK}}visitor {{/if}}parking cards, enter the following code in the mobile application.",
   },
 };
