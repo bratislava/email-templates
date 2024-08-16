@@ -6,5 +6,4 @@ import ApplicationStatusEmail, {
 export const PaasTestingInvitation = () => {
   return <ApplicationStatusEmail variant={variants.paasTestingInvitation} />;
 };
-
 export default PaasTestingInvitation;
