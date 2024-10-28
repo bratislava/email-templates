@@ -17,10 +17,26 @@ const fullWidthButton = {
   paddingBottom: "12px",
 } as React.CSSProperties;
 
-const LinkButton = ({ text, isBlock, href }) => (
+interface LinkButtonProps {
+  text: string;
+  href: string;
+  isBlock?: boolean;
+  colorVariant?: "red" | "black";
+}
+
+const LinkButton = ({
+  text,
+  isBlock,
+  href,
+  colorVariant = "red",
+}: LinkButtonProps) => (
   <Link
     href={href}
-    style={{ ...fullWidthButton, ...(isBlock ? { width: "100vw" } : {}) }}
+    style={{
+      ...fullWidthButton,
+      ...(isBlock ? { width: "100vw" } : {}),
+      ...(colorVariant === "black" ? { backgroundColor: "#1F1F1F" } : {}),
+    }}
   >
     {text}
   </Link>

@@ -2,7 +2,7 @@ import { Column, Img, Row } from "@react-email/components";
 
 import * as React from "react";
 
-import { cdnImageAddress, HeaderIconVariant } from "../utils/constants";
+import { HeaderIconVariant } from "../utils/constants";
 import { HeaderIconVariantType } from "../utils/enums";
 
 const logoImg = {
@@ -24,7 +24,7 @@ const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => (
     <Column>
       <Img
         height={40}
-        src={`${cdnImageAddress}${iconVariant.address}`}
+        src={iconVariant.address}
         alt={iconVariant.altName}
         style={logoImg}
       />

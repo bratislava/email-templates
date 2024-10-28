@@ -3,6 +3,8 @@ export const kontoTexts = {
     "Thank you for helping us develop digital services.<br/>Your Capital City of the Slovak Republic, Bratislava",
   footerUsing:
     "Thank you for using our services.<br/>Your Capital City of the Slovak Republic, Bratislava",
+  footerOlo:
+    "Thank you for using our services.<br/>Your OLO & Capital City of the Slovak Republic, Bratislava",
 };
 
 export const mpaTexts = {
