@@ -11,11 +11,15 @@ export type Variant = {
   titleText: string;
   statusImg: StatusImgVariants;
   text: string;
+  showFeedback?: boolean;
+  footerVariant: FooterVariant;
+  showUnsubscribe?: boolean;
 };
 
-export enum VariantFooter {
+export enum FooterVariant {
   develop = "develop",
   using = "using",
+  olo = "olo",
 }
 
 export type HeaderIconVariantType = {
