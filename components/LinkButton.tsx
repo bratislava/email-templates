@@ -3,7 +3,6 @@ import * as React from "react";
 
 const fullWidthButton = {
   minWidth: "150px",
-  width: "100vw",
   color: "#FFFFFF",
   textDecoration: "none",
   borderRadius: "8px",
@@ -26,15 +25,22 @@ interface LinkButtonProps {
 const LinkButton = ({ text, href, colorVariant = "red" }: LinkButtonProps) => (
   // Outlook doesn't support link styling, so we use span to expand to full width
   // https://www.emailonacid.com/blog/article/email-development/how-to-code-emails-for-outlook-2016/
-  <Link
-    href={href}
-    style={{
-      ...fullWidthButton,
-      ...(colorVariant === "black" ? { backgroundColor: "#1F1F1F" } : {}),
-    }}
-  >
-    {text}
-  </Link>
+  <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
+    <tr>
+      <td align="center">
+        <Link
+          href={href}
+          style={{
+            ...fullWidthButton,
+            ...{ width: "100vw" },
+            ...(colorVariant === "black" ? { backgroundColor: "#1F1F1F" } : {}),
+          }}
+        >
+          {text}
+        </Link>
+      </td>
+    </tr>
+  </table>
 );
 
 export default LinkButton;
