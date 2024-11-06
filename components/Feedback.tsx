@@ -37,12 +37,7 @@ const Feedback = ({
     <Heading as="h2" style={feedback}>
       {title}
     </Heading>
-    <LinkButton
-      href={href}
-      isBlock
-      colorVariant={colorVariant}
-      text={buttonText}
-    />
+    <LinkButton href={href} colorVariant={colorVariant} text={buttonText} />
   </>
 );
 

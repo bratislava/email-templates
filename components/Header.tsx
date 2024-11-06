@@ -6,7 +6,7 @@ import { HeaderIconVariant } from "../utils/constants";
 import { HeaderIconVariantType } from "../utils/enums";
 
 const logoImg = {
-  margin: "20px auto",
+  padding: "20px 0",
 };
 
 const border = {
@@ -22,12 +22,19 @@ interface HeaderProps {
 const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => (
   <Row style={{ ...border, paddingTop: "0" }}>
     <Column>
-      <Img
-        height={40}
-        src={iconVariant.address}
-        alt={iconVariant.altName}
-        style={logoImg}
-      />
+      {/* Outlook doesn't support margin, so we use table to center the image */}
+      <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
+        <tr>
+          <td align="center">
+            <Img
+              height={40}
+              src={iconVariant.address}
+              alt={iconVariant.altName}
+              style={logoImg}
+            />
+          </td>
+        </tr>
+      </table>
     </Column>
   </Row>
 );

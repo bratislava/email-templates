@@ -145,7 +145,6 @@ const ApplicationStatusEmail = ({
               <div style={{ marginTop: "36px" }}></div>
               <LinkButton
                 href="{{slug}}"
-                isBlock
                 text={
                   variant === variants.errorVirus
                     ? texts.reuploadAttachments
@@ -161,7 +160,6 @@ const ApplicationStatusEmail = ({
               <div style={{ marginTop: "36px" }}></div>
               <LinkButton
                 href={`{{feHost}}/moje-ziadosti?sekcia=odosiela-sa"`}
-                isBlock
                 text={texts.redirectMyApplications}
               />
             </>
@@ -242,7 +240,7 @@ function buttonLink(
   return (
     <>
       <div style={{ marginTop: "24px" }}></div>
-      <LinkButton href={buttonAddress} isBlock text={buttonTitle} />
+      <LinkButton href={buttonAddress} text={buttonTitle} />
     </>
   );
 }
