@@ -4,7 +4,6 @@ import * as React from "react";
 const fullWidthButton = {
   minWidth: "150px",
   color: "#FFFFFF",
-  textDecoration: "none",
   borderRadius: "8px",
   backgroundColor: "#D83728",
   textAlign: "center",
@@ -28,16 +27,26 @@ const LinkButton = ({ text, href, colorVariant = "red" }: LinkButtonProps) => (
   <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
     <tr>
       <td align="center">
-        <Link
-          href={href}
+        <span
           style={{
             ...fullWidthButton,
-            ...{ width: "100vw" },
             ...(colorVariant === "black" ? { backgroundColor: "#1F1F1F" } : {}),
           }}
         >
-          {text}
-        </Link>
+          <Link
+            href={href}
+            style={{
+              ...{
+                // This is a workaround to make the link take the full width, sadly there is no workaround for old (2006) Outlook
+                display: "table-cell",
+                width: "100vw",
+                color: "#FFFFFF",
+              },
+            }}
+          >
+            {text}
+          </Link>
+        </span>
       </td>
     </tr>
   </table>
