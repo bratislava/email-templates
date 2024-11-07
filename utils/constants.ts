@@ -16,4 +16,8 @@ export const HeaderIconVariant = {
     address: "https://olo.s3.bratislava.sk/assets/email/olo-city-logo.png",
     altName: "OLO logo",
   },
+  olo: {
+    address: "https://olo.s3.bratislava.sk/assets/email/olo-logo.png",
+    altName: "OLO logo",
+  },
 };

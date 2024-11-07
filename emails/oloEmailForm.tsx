@@ -1,10 +1,11 @@
 import * as React from "react";
 import BasicEmail from "../components/BasicEmail";
 import { Column, Markdown, Row } from "@react-email/components";
+import { HeaderIconVariant } from "../utils/constants";
 
 export const OloEmailForm = () => {
   return (
-    <BasicEmail>
+    <BasicEmail headerIconVariant={HeaderIconVariant.olo}>
       <Row>
         <Column>
           <Markdown
@@ -12,12 +13,12 @@ export const OloEmailForm = () => {
               p: { marginBottom: "0px" },
             }}
           >
-            {'{{applicationName}}'}
+            {"{{applicationName}}"}
           </Markdown>
         </Column>
       </Row>
       <Row>
-        <Column>{'{{{htmlData}}}'}</Column>
+        <Column>{"{{{htmlData}}}"}</Column>
       </Row>
     </BasicEmail>
   );
