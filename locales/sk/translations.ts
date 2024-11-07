@@ -118,7 +118,7 @@ export const kontoTexts = {
   footerDevelop:
     "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
   footerOlo:
-    "Ďakujeme, že využívate naše služby.<br/>Váše OLO & Hlavné mesto Bratislava",
+    "Ďakujeme, že využívate naše služby.<br/>Vaše OLO & Hlavné mesto Bratislava",
   unsubscribe:
     '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
 };
