@@ -11,13 +11,13 @@ Advantages of using this tool:
 First, install the dependencies:
 
 ```sh
-yarn
+npm install
 ```
 
 Then, run the development server:
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Open [localhost:3000](http://localhost:3000) with your browser to see the result.
