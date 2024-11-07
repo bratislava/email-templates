@@ -37,12 +37,23 @@ export const StatusImg = ({
       break;
   }
   return (
-    <Img height={88} src={`${cdnImageAddress}/${icon}.png`} style={statusImg} />
+    //Outlook doesn't support margin, so we use table to center the image
+    <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
+      <tr>
+        <td align="center">
+          <Img
+            height={88}
+            src={`${cdnImageAddress}/${icon}.png`}
+            style={statusImg}
+          />
+        </td>
+      </tr>
+    </table>
   );
 };
 
 export default StatusImg;
 
 const statusImg = {
-  margin: "24px auto",
+  paddingTop: "24px",
 };

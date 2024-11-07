@@ -5,8 +5,9 @@ import Title from "./Title";
 import Footer from "./Footer";
 import BasicEmail from "./BasicEmail";
 import LinkButton from "./LinkButton";
-import { StatusImgVariants, Variant, VariantFooter } from "../utils/enums";
+import { StatusImgVariants, Variant, FooterVariant } from "../utils/enums";
 import { kontoTexts as texts } from "../locales/sk/translations";
+import Feedback from "./Feedback";
 
 interface FormStatusEmailProps {
   variant: Variant;
@@ -17,56 +18,73 @@ export const variants = {
     titleText: texts.mainTexts.errorVirus.title,
     statusImg: StatusImgVariants.error,
     text: texts.mainTexts.errorVirus.content,
+    footerVariant: FooterVariant.using,
   },
   errorTryAgain: {
     titleText: texts.mainTexts.errorTryAgain.title,
     statusImg: StatusImgVariants.error,
     text: texts.mainTexts.errorTryAgain.content,
+    footerVariant: FooterVariant.using,
   },
   errorNotSpecified: {
     titleText: texts.mainTexts.errorNotSpecified.title,
     statusImg: StatusImgVariants.error,
     text: texts.mainTexts.errorNotSpecified.content,
+    footerVariant: FooterVariant.using,
   },
   inProgress: {
     titleText: texts.mainTexts.inProgress.title,
     statusImg: StatusImgVariants.hourglass,
     text: texts.mainTexts.inProgress.content,
+    footerVariant: FooterVariant.using,
   },
   sent: {
     titleText: texts.mainTexts.sent.title,
     statusImg: StatusImgVariants.sent,
     text: texts.mainTexts.sent.content,
+    showFeedback: true,
+    footerVariant: FooterVariant.using,
   },
   delivered: {
     titleText: texts.mainTexts.delivered.title,
     statusImg: StatusImgVariants.sent,
     text: texts.mainTexts.delivered.content,
+    showFeedback: true,
+    footerVariant: FooterVariant.using,
   },
   success: {
     titleText: texts.mainTexts.success.title,
     statusImg: StatusImgVariants.success,
     text: texts.mainTexts.success.content,
+    showFeedback: true,
+    footerVariant: FooterVariant.using,
   },
   denied: {
     titleText: texts.mainTexts.denied.title,
     statusImg: StatusImgVariants.cross,
     text: texts.mainTexts.denied.content,
+    showFeedback: true,
+    footerVariant: FooterVariant.using,
   },
   paasTestingInvitation: {
     titleText: texts.mainTexts.paasTestingInvitation.title,
     statusImg: StatusImgVariants.castle,
     text: texts.mainTexts.paasTestingInvitation.content,
+    footerVariant: FooterVariant.develop,
+    showUnsubscribe: true,
   },
   taxesTestingInvitation: {
     titleText: texts.mainTexts.taxesTestingInvitation.title,
     statusImg: StatusImgVariants.castle,
     text: texts.mainTexts.taxesTestingInvitation.content,
+    footerVariant: FooterVariant.develop,
+    showUnsubscribe: true,
   },
   taxesTestingInvitationSecond: {
     titleText: texts.mainTexts.taxesTestingInvitationSecond.title,
     statusImg: StatusImgVariants.castle,
     text: texts.mainTexts.taxesTestingInvitationSecond.content,
+    footerVariant: FooterVariant.develop,
   },
 };
 
@@ -127,7 +145,6 @@ const ApplicationStatusEmail = ({
               <div style={{ marginTop: "36px" }}></div>
               <LinkButton
                 href="{{slug}}"
-                isBlock
                 text={
                   variant === variants.errorVirus
                     ? texts.reuploadAttachments
@@ -143,7 +160,6 @@ const ApplicationStatusEmail = ({
               <div style={{ marginTop: "36px" }}></div>
               <LinkButton
                 href={`{{feHost}}/moje-ziadosti?sekcia=odosiela-sa"`}
-                isBlock
                 text={texts.redirectMyApplications}
               />
             </>
@@ -176,34 +192,15 @@ const ApplicationStatusEmail = ({
               </Markdown>
             </>
           )}
-          {[
-            variants.sent,
-            variants.delivered,
-            variants.success,
-            variants.denied,
-          ].includes(variant) && (
-            <>
-              <Text style={border} />
-              <Heading as="h2" style={feedback}>
-                {texts.feedbackTitle}
-              </Heading>
-              <LinkButton
-                href="{{feedbackLink}}"
-                isBlock
-                text={texts.feedbackButton}
-              />
-            </>
+          {variant.showFeedback && (
+            <Feedback
+              href="{{feedbackLink}}"
+              title={texts.feedbackTitle}
+              buttonText={texts.feedbackButton}
+            />
           )}
-
-          {variant === variants.paasTestingInvitation ||
-          variant === variants.taxesTestingInvitation ||
-          variant === variants.taxesTestingInvitationSecond ? (
-            <Footer variant={VariantFooter.develop} />
-          ) : (
-            <Footer variant={VariantFooter.using} />
-          )}
-          {(variant === variants.paasTestingInvitation ||
-            variant === variants.taxesTestingInvitation) && (
+          <Footer variant={variant.footerVariant} />
+          {variant.showUnsubscribe && (
             <Markdown
               markdownCustomStyles={{
                 p: {
@@ -224,16 +221,6 @@ const ApplicationStatusEmail = ({
 
 export default ApplicationStatusEmail;
 
-const feedback = {
-  paddingTop: "32px",
-  paddingBottom: "16px",
-  margin: 0,
-  textAlign: "center",
-  fontWeight: "600",
-  fontSize: "20px",
-  lineHeight: "28px",
-} as React.CSSProperties;
-
 const secondaryHeading = {
   margin: 0,
   textAlign: "center",
@@ -246,13 +233,6 @@ const headerContentSubtitle = {
   fontSize: "17px",
 };
 
-const border = {
-  borderBottom: "solid 2px",
-  borderColor: "#D6D6D6",
-  paddingTop: "36px",
-  margin: 0,
-};
-
 function buttonLink(
   buttonAddress: string,
   buttonTitle: string
@@ -260,7 +240,7 @@ function buttonLink(
   return (
     <>
       <div style={{ marginTop: "24px" }}></div>
-      <LinkButton href={buttonAddress} isBlock text={buttonTitle} />
+      <LinkButton href={buttonAddress} text={buttonTitle} />
     </>
   );
 }

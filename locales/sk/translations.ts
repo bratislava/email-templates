@@ -99,6 +99,13 @@ export const kontoTexts = {
       thirdContentTitle: "Potrebujete pomoc?",
       thirdContent: `Ak by ste s vyplnením potrebovali pomôcť, neváhajte kontaktovať vedúcu oddelenia miestnych daní, poplatkov a licencií Vladimíru Ráczovú na <a href="mailto:vladimira.raczova@bratislava.sk" style="font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">vladimira.raczova@bratislava.sk</a>.`,
     },
+    oloSuccess: {
+      title: "Vaša požiadavka bola doručená",
+      content:
+        "Vaša požiadavka {{applicationName}} bola úspešne odoslaná a aktuálne ju spracovávame. Ohľadom ďalších krokov Vás budeme kontaktovať emailom alebo telefonicky v najbližších pracovných dňoch. V prílohe emailu nájdete sumár odoslanej požiadavky. ",
+      license:
+        'Viac informácií o našich službách a kontaktné údaje OLO nájdete na <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link webovej stránke mestskej organizácie</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link Ochrana osobných údajov</a>.',
+    },
   },
   editFormTitle: "Upraviť žiadosť",
   reuploadAttachments: "Nahrať nové prílohy",
@@ -110,6 +117,8 @@ export const kontoTexts = {
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",
   footerDevelop:
     "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
+  footerOlo:
+    "Ďakujeme, že využívate naše služby.<br/>Váše OLO & Hlavné mesto Bratislava",
   unsubscribe:
     '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
 };
