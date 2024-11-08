@@ -104,7 +104,7 @@ export const kontoTexts = {
       content:
         "Vaša požiadavka {{applicationName}} bola úspešne odoslaná a aktuálne ju spracovávame. Ohľadom ďalších krokov Vás budeme kontaktovať emailom alebo telefonicky v najbližších pracovných dňoch. V prílohe emailu nájdete sumár odoslanej požiadavky. ",
       license:
-        'Viac informácií o našich službách a kontaktné údaje OLO nájdete na <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link webovej stránke mestskej organizácie</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="{{feHost}}/moje-ziadosti?sekcia=odoslane" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">TODO link Ochrana osobných údajov</a>.',
+        'Vaše osobné údaje používame na vybavenie Vašej požiadavky. Viac informácií nájdete na stránke <a href="https://olo.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/konto/vyhlasenie-o-spracovani-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.',
     },
   },
   editFormTitle: "Upraviť žiadosť",
@@ -120,7 +120,7 @@ export const kontoTexts = {
   footerOlo:
     "Ďakujeme, že využívate naše služby.<br/>Vaše OLO & Hlavné mesto Bratislava",
   unsubscribe:
-    '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 500;font-size: 16px;line-height: 24px;color: #333333;">Odhlásenie z odberu</a>',
+    '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Odhlásenie z odberu</a>',
 };
 
 export const mpaTexts = {
