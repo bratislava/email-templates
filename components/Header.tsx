@@ -16,27 +16,39 @@ const border = {
   margin: 0,
 };
 interface HeaderProps {
-  iconVariant?: HeaderIconVariantType;
+  iconVariant?: HeaderIconVariantType | HeaderIconVariantType[];
 }
 
-const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => (
-  <Row style={{ ...border, paddingTop: "0" }}>
-    <Column>
-      {/* Outlook doesn't support margin, so we use table to center the image */}
-      <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
-        <tr>
-          <td align="center">
-            <Img
-              height={40}
-              src={iconVariant.address}
-              alt={iconVariant.altName}
-              style={logoImg}
-            />
-          </td>
-        </tr>
-      </table>
-    </Column>
-  </Row>
-);
+const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => {
+  const iconVariants = Array.isArray(iconVariant) ? iconVariant : [iconVariant];
+
+  return (
+    <Row style={{ ...border, paddingTop: "0" }}>
+      <Column>
+        {/* Outlook doesn't support margin, so we use table to center the image */}
+        <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
+          <tr>
+            <td align="center">
+              {iconVariants.map((variant, index) => (
+                <Img
+                  key={variant.address}
+                  height={40}
+                  src={variant.address}
+                  alt={variant.altName}
+                  style={{
+                    ...logoImg,
+                    display: "inline-block",
+                    verticalAlign: "middle",
+                    marginLeft: index > 0 ? "20px" : "0",
+                  }}
+                />
+              ))}
+            </td>
+          </tr>
+        </table>
+      </Column>
+    </Row>
+  );
+};
 
 export default Header;

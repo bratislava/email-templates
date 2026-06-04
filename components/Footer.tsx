@@ -38,6 +38,8 @@ const Footer = ({
             ? localizedTexts.footerUsing
             : variant === FooterVariant.olo
             ? localizedTexts.footerOlo
+            : variant === FooterVariant.paas
+            ? localizedTexts.footerPaas
             : ""}
         </Markdown>
       )}

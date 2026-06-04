@@ -34,7 +34,7 @@ const container = {
 
 interface BasicEmailProps {
   children: React.ReactNode;
-  headerIconVariant?: HeaderIconVariantType;
+  headerIconVariant?: HeaderIconVariantType | HeaderIconVariantType[];
 }
 
 const BasicEmail = ({ children, headerIconVariant }: BasicEmailProps) => (
