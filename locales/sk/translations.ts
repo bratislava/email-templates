@@ -112,6 +112,8 @@ export const kontoTexts = {
   redirectMyApplications: "Prejsť na Moje žiadosti",
   feedbackTitle:
     "Prosíme, ohodnoťte Vašu skúsenosť a pomôžte mestu Bratislava zlepšovať svoje služby.",
+  feedbackOloTitle:
+    "Prosíme, ohodnoťte Vašu skúsenosť a pomôžte nám zlepšovať naše služby.",
   feedbackButton: "Vyplniť dotazník",
   footerUsing:
     "Ďakujeme, že využívate naše služby.<br/>Vaše Hlavné mesto SR Bratislava",

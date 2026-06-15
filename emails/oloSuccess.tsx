@@ -29,7 +29,7 @@ const Success = () => {
           </Markdown>
           <Feedback
             href="https://bravo.staffino.com/bratislava/id=WWFSNa9q"
-            title={texts.feedbackTitle}
+            title={texts.feedbackOloTitle}
             buttonText={texts.feedbackButton}
             colorVariant="black"
           />
