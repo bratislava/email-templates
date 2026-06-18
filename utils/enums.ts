@@ -23,7 +23,7 @@ export enum FooterVariant {
   paas = "paas",
 }
 
-export type HeaderIconVariantType = {
+export type HeaderLogo = {
   address: string;
   altName: string;
 };

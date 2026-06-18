@@ -6,13 +6,13 @@ import BasicEmail from '../components/BasicEmail'
 import { kontoTexts as texts } from '../locales/sk/translations'
 import { FooterVariant, StatusImgVariants } from '../utils/enums'
 import Footer from '../components/Footer'
-import { HeaderIconVariant } from '../utils/constants'
+import { HeaderLogos } from '../utils/constants'
 import Title from '../components/Title'
 
 const KontoPaasKontaktnyFormularSuccess = () => {
   return (
     <BasicEmail
-      headerIconVariant={[HeaderIconVariant.city, HeaderIconVariant.paas]}
+      headerLogos={[HeaderLogos.city, HeaderLogos.paas]}
     >
       <Title
         statusImg={StatusImgVariants.success}

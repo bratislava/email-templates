@@ -1,35 +1,34 @@
-import { Column, Img, Row } from "@react-email/components";
+import { Column, Img, Row } from '@react-email/components'
 
-import * as React from "react";
-
-import { HeaderIconVariant } from "../utils/constants";
-import { HeaderIconVariantType } from "../utils/enums";
+import { HeaderLogos } from '../utils/constants'
+import { HeaderLogo } from '../utils/enums'
 
 const logoImg = {
-  padding: "20px 0",
-};
-
-const border = {
-  borderBottom: "solid 2px",
-  borderColor: "#D6D6D6",
-  paddingTop: "24px",
-  margin: 0,
-};
-interface HeaderProps {
-  iconVariant?: HeaderIconVariantType | HeaderIconVariantType[];
+  padding: '20px 0',
+  display: 'inline-block',
+  verticalAlign: 'middle',
 }
 
-const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => {
-  const iconVariants = Array.isArray(iconVariant) ? iconVariant : [iconVariant];
+const border = {
+  borderBottom: 'solid 2px',
+  borderColor: '#D6D6D6',
+  paddingTop: '24px',
+  margin: 0,
+}
 
+interface HeaderProps {
+  logos?: HeaderLogo[];
+}
+
+const Header = ({ logos = HeaderLogos.city }: HeaderProps) => {
   return (
-    <Row style={{ ...border, paddingTop: "0" }}>
+    <Row style={{ ...border, paddingTop: '0' }}>
       <Column>
         {/* Outlook doesn't support margin, so we use table to center the image */}
         <table width="100%" border={0} cellSpacing={0} cellPadding={0}>
           <tr>
             <td align="center">
-              {iconVariants.map((variant, index) => (
+              {logos.map((variant, index) => (
                 <Img
                   key={variant.address}
                   height={40}
@@ -37,9 +36,7 @@ const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => {
                   alt={variant.altName}
                   style={{
                     ...logoImg,
-                    display: "inline-block",
-                    verticalAlign: "middle",
-                    marginLeft: index > 0 ? "20px" : "0",
+                    marginLeft: index > 0 ? '20px' : '0',
                   }}
                 />
               ))}
@@ -48,7 +45,7 @@ const Header = ({ iconVariant = HeaderIconVariant.city }: HeaderProps) => {
         </table>
       </Column>
     </Row>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
