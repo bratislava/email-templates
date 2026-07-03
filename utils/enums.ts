@@ -20,9 +20,10 @@ export enum FooterVariant {
   develop = "develop",
   using = "using",
   olo = "olo",
+  paas = "paas",
 }
 
-export type HeaderIconVariantType = {
+export type HeaderLogo = {
   address: string;
   altName: string;
 };

@@ -23,6 +23,13 @@ const Footer = ({
 }: FooterlProps) => {
   const localizedTexts = language === Language.sk ? texts : enTexts;
 
+  const footerTextByVariant: Record<FooterVariant, string> = {
+    [FooterVariant.develop]: localizedTexts.footerDevelop,
+    [FooterVariant.using]: localizedTexts.footerUsing,
+    [FooterVariant.olo]: localizedTexts.footerOlo,
+    [FooterVariant.paas]: localizedTexts.footerPaas,
+  };
+
   return (
     <>
       <Text style={border} />
@@ -32,13 +39,7 @@ const Footer = ({
             p: { marginBottom: "0px", marginTop: "32px" },
           }}
         >
-          {variant === FooterVariant.develop
-            ? localizedTexts.footerDevelop
-            : variant === FooterVariant.using
-            ? localizedTexts.footerUsing
-            : variant === FooterVariant.olo
-            ? localizedTexts.footerOlo
-            : ""}
+          {footerTextByVariant[variant] ?? ""}
         </Markdown>
       )}
     </>

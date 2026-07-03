@@ -1,15 +1,8 @@
-import {
-  Body,
-  Container,
-  Head,
-  Html,
-  Row,
-  Column,
-} from "@react-email/components";
-import * as React from "react";
+import { Body, Column, Container, Head, Html, Row, } from '@react-email/components'
+import * as React from 'react'
 
-import Header from "../components/Header";
-import { HeaderIconVariantType } from "../utils/enums";
+import Header from '../components/Header'
+import { HeaderLogo } from '../utils/enums'
 
 const main = {
   backgroundColor: "#f3f3f5",
@@ -34,15 +27,15 @@ const container = {
 
 interface BasicEmailProps {
   children: React.ReactNode;
-  headerIconVariant?: HeaderIconVariantType;
+  headerLogos?: HeaderLogo[];
 }
 
-const BasicEmail = ({ children, headerIconVariant }: BasicEmailProps) => (
+const BasicEmail = ({ children, headerLogos }: BasicEmailProps) => (
   <Html>
     <Head />
     <Body style={main}>
       <Container style={container}>
-        <Header iconVariant={headerIconVariant} />
+        <Header logos={headerLogos} />
         <Row style={containerMain}>
           <Column>{children}</Column>
         </Row>

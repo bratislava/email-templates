@@ -106,6 +106,13 @@ export const kontoTexts = {
       license:
         'Vaše osobné údaje používame na vybavenie Vašej požiadavky. Viac informácií nájdete na stránke <a href="https://olo.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.<br/><br/>Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/konto/vyhlasenie-o-spracovani-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Vyhlásenie o spracúvaní osobných údajov</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Ochrana osobných údajov</a>.',
     },
+    kontoPaasKontaktnyFormularSuccess: {
+      title: "Vaša požiadavka bola doručená",
+      content:
+        'vaša požiadavka bola úspešne odoslaná a aktuálne ju spracovávame. Urobíme všetko pre to, aby sme Vám odpovedali do 48 hodín.<br/><br/>Informácie o pravidlách parkovania, zónach a parkovacích kartách nájdete na <a href="http://www.paas.sk/" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">www.paas.sk</a>. Najčastejšie otázky a odpovede ohľadom parkovania v Bratislave nájdete v časti <a href="https://paas.sk/casto-kladene-otazky/" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 16px;line-height: 24px;color: #333333;">Často kladené otázky</a>.<br/><br/>V prílohe emailu nájdete sumár odoslanej požiadavky.',
+      license:
+        'Informácie o spracúvaní osobných údajov v súvislosti s portálom Bratislavské konto nájdete na stránke <a href="https://bratislava.sk/dokumenty/podmienky-ochrany-sukromia-pre-bratislavske-konto" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Podmienok ochrany súkromia pre Bratislavské konto</a> a ďalšie všeobecné informácie na stránke <a href="https://bratislava.sk/ochrana-osobnych-udajov" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Ochrana osobných údajov</a>. Všeobecné podmienky nájdete na stránke <a href="https://bratislava.sk/dokumenty/vseobecne-podmienky-pouzivania-elektronickych-sluzieb-bratislavskeho-konta" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Všeobecné podmienky používania elektronických služieb Bratislavského konta</a>. Po prijatí vašej požiadavky bude vaše osobné údaje spracúvať aj spoločnosť PAAS. Bližšie informácie nájdete na stránke o <a href="https://paas.sk/ochrana-osobnych-udajov/" target="_blank" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">spracúvaní osobných údajov spoločnosťou PAAS</a>.',
+    },
   },
   editFormTitle: "Upraviť žiadosť",
   reuploadAttachments: "Nahrať nové prílohy",
@@ -121,6 +128,8 @@ export const kontoTexts = {
     "Ďakujeme, že nám pomáhate rozvíjať digitálne služby.<br/>Vaše Hlavné mesto SR Bratislava",
   footerOlo:
     "Ďakujeme, že využívate naše služby.<br/>Vaše OLO & Hlavné mesto Bratislava",
+  footerPaas:
+    "Ďakujeme, že využívate naše služby.<br/>Váš Bratislavský parkovací asistent PAAS a Hlavné mesto SR Bratislava",
   unsubscribe:
     '<a href="{{unsubscribeLink}}" style="width: 100vw;min-width: 150px;font-weight: 600;font-size: 14px;line-height: 20px;color: #333333;">Odhlásenie z odberu</a>',
 };

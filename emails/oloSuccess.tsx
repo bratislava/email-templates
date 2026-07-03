@@ -1,18 +1,18 @@
-import * as React from "react";
-import { Column, Text, Row } from "@react-email/components";
-import { Markdown } from "@react-email/markdown";
+import * as React from 'react'
+import { Column, Row, Text } from '@react-email/components'
+import { Markdown } from '@react-email/markdown'
 
-import BasicEmail from "../components/BasicEmail";
-import Title from "../components/Title";
-import { kontoTexts as texts } from "../locales/sk/translations";
-import { StatusImgVariants, FooterVariant } from "../utils/enums";
-import Footer from "../components/Footer";
-import Feedback from "../components/Feedback";
-import { HeaderIconVariant } from "../utils/constants";
+import BasicEmail from '../components/BasicEmail'
+import Title from '../components/Title'
+import { kontoTexts as texts } from '../locales/sk/translations'
+import { FooterVariant, StatusImgVariants } from '../utils/enums'
+import Footer from '../components/Footer'
+import Feedback from '../components/Feedback'
+import { HeaderLogos } from '../utils/constants'
 
 const Success = () => {
   return (
-    <BasicEmail headerIconVariant={HeaderIconVariant.oloCity}>
+    <BasicEmail headerLogos={[HeaderLogos.oloCity]}>
       <Title
         statusImg={StatusImgVariants.success}
         title={texts.mainTexts.oloSuccess.title}
