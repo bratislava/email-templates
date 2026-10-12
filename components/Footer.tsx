@@ -1,9 +1,9 @@
-import { Text } from "@react-email/components";
-import { Markdown } from "@react-email/markdown";
-import * as React from "react";
-import { Language, FooterVariant } from "../utils/enums";
-import { kontoTexts as texts } from "../locales/sk/translations";
-import { kontoTexts as enTexts } from "../locales/en/translations";
+import { Text } from '@react-email/components'
+import { Markdown } from '@react-email/markdown'
+import * as React from 'react'
+import { FooterVariant, Language } from '../utils/enums'
+import { kontoTexts as texts } from '../locales/sk/translations'
+import { kontoTexts as enTexts } from '../locales/en/translations'
 
 const border = {
   borderBottom: "solid 2px",
@@ -27,7 +27,6 @@ const Footer = ({
     [FooterVariant.develop]: localizedTexts.footerDevelop,
     [FooterVariant.using]: localizedTexts.footerUsing,
     [FooterVariant.olo]: localizedTexts.footerOlo,
-    [FooterVariant.paas]: localizedTexts.footerPaas,
   };
 
   return (

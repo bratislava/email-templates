@@ -5,8 +5,6 @@ export const kontoTexts = {
     "Thank you for using our services.<br/>Your Capital City of the Slovak Republic, Bratislava",
   footerOlo:
     "Thank you for using our services.<br/>Your OLO & Capital City of the Slovak Republic, Bratislava",
-  footerPaas:
-    "Thank you for using our services.<br/>Your Bratislava Parking Assistant PAAS & Capital City of the Slovak Republic, Bratislava",
 };
 
 export const mpaTexts = {

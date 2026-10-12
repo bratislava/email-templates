@@ -28,7 +28,7 @@ const KontoPaasKontaktnyFormularSuccess = () => {
           >
             {texts.mainTexts.kontoPaasKontaktnyFormularSuccess.content}
           </Markdown>
-          <Footer variant={FooterVariant.paas} />
+          <Footer variant={FooterVariant.using} />
           <Text style={border} />
           <Markdown
             markdownCustomStyles={{
